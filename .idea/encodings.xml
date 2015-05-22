@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/app/config/app.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/DataController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/database/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/database/migrations/2015_05_22_152537_create_resume_files_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/BaseModel.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/Data.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/ResumeData.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/ResumeFile.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/create.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/delete.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/detailedsearch.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/header.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/index.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/search.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/composer.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/css/layout.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/readme.md" charset="UTF-8" />
+  </component>
+</project>
+

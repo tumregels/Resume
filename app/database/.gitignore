@@ -1,0 +1,6 @@
+*.sqlite
+/bootstrap/compiled.php
+/vendor
+composer.phar
+.DS_Store
+Thumbs.db
