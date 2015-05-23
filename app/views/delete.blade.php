@@ -7,10 +7,9 @@
 
     <form action="{{ action('DataController@handleDelete') }}" method="post" role="form">
         <input type="hidden" name="id" value="{{ $data->id }}" />
-        <button type="submit"> Yes </button>
-        <button href="{{ action('DataController@index') }}" >No Way!</button>
+        <button type="submit" name="yes"> Yes </button>
+        {{--<button href="{{ action('DataController@index') }}" >No Way!</button>--}}
     </form>
-
 
     {{--
     {{Form::open(array('class' => 'form-horizontal', 'method' => 'delete', 'action' => array('DataController@handleDelete', $data->id)))}}

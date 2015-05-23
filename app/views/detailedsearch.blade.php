@@ -32,7 +32,9 @@
                 <td>{{ $result->firstname }}</td>
                 <td>{{ $result->lastname }}</td>
                 <td>{{ $result->keywords }}</td>
-                <td>{{ $result->pdffile }}</td>
+                <td>
+                <a href="{{'data:' . $result->mime . ';base64,' . $result->file}}" target="_blank" >File</a>
+                </td>
             </tr>
             @endforeach
         </tbody>

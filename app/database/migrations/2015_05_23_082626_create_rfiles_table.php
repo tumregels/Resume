@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateResumeFilesTable extends Migration {
+class CreateRfilesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,16 @@ class CreateResumeFilesTable extends Migration {
 	 */
 	public function up()
 	{
-        Schema::create('resumefile', function($rfile)
+        Schema::create('rfiles', function($rfile)
         {
             $rfile->increments('id');
             $rfile->string('name');
-            $rfile->binary('file');
+            //$rfile->binary('file');
             $rfile->string('mime');
             $rfile->string('size');
             $rfile->timestamps();
         });
+        DB::statement("ALTER TABLE rfiles ADD file MEDIUMBLOB");
 	}
 
 	/**
@@ -30,7 +31,7 @@ class CreateResumeFilesTable extends Migration {
 	 */
 	public function down()
 	{
-        Schema::drop('resumefile');
+        Schema::drop('rfiles');
 	}
 
 }

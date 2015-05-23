@@ -18,6 +18,9 @@
                 <td>{{ $result->keywords }}</td>
                 <td>{{ $result->pdffile }}</td>
                 <td>
+                <a href="{{'data:' . $result->mime . ';base64,' . $result->file}}" target="_blank" >File</a>
+                </td>
+                <td>
                     <a href="{{ action('DataController@delete', $result->id) }}" >Delete</a>
                 </td>
             </tr>

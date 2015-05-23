@@ -6,7 +6,7 @@ class Data extends BaseModel
         'firstname'=> 'required|min:3|max:128',
         'lastname'=> 'required|min:3|max:128',
         'keywords'=> 'required|min:3|max:128',
-        'pdffile'=> 'required'
+        'file' => 'required|mimes:doc,docx,pdf',
     );
 
 }

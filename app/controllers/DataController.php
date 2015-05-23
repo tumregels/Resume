@@ -30,8 +30,13 @@ class DataController extends BaseController
             $data->firstname = Input::get('firstname');
             $data->lastname = Input::get('lastname');
             $data->keywords = Input::get('keywords');
-            $data->pdffile = Input::get('pdffile');
 
+            $f = Input::file('file');
+            $data->pdffile = $f->getClientOriginalName();
+            $data->type = $f->getClientOriginalExtension();
+            $data->file = base64_encode(file_get_contents($f->getRealPath()));
+            $data->mime = $f->getMimeType();
+            $data->size = $f->getSize();
             $data->save();
 
             return Redirect::action('DataController@index');

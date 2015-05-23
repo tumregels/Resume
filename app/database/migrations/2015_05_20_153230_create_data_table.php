@@ -18,9 +18,14 @@ class CreateDataTable extends Migration {
             $theData->string('firstname');
             $theData->string('lastname');
             $theData->string('keywords');
-            $theData->string('pdffile');
+            $theData->string('pdffile'); //stands for filename
             $theData->timestamps();
+            //$theData->binary('file');
+            $theData->string('type');
+            $theData->string('mime');
+            $theData->string('size');
         });
+        DB::statement("ALTER TABLE data ADD file MEDIUMBLOB");
     }
 
     /**

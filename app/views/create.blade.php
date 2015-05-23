@@ -12,11 +12,8 @@
     {{ Form::label("keywords", "Keywords") }}
     {{ Form::text("keywords", null, array('class' => 'form-control')) }}
 
-    {{ Form::label("pdffile", "pdf file") }}
-    {{ Form::text("pdffile", null, array('class' => 'form-control')) }}
-
-    {{-- Form::label('file','File',array('id'=>'','class'=>'')) --}}
-    {{-- Form::file('file','',array('id'=>'','class'=>'')) --}}
+    {{ Form::label('file','Resume File') }}
+    {{ Form::file('file', null, array('class' => 'form-control')) }}
 
     {{ Form::submit("Create") }}
     {{ Form::close() }}
