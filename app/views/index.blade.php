@@ -7,7 +7,7 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Keywords</th>
-                <th>PDF File</th>
+                <th>File</th>
             </tr>
         </thead>
         <tbody>
@@ -18,7 +18,7 @@
                 <td>{{ $result->keywords }}</td>
                 <td>{{ $result->pdffile }}</td>
                 <td>
-                <a href="{{'data:' . $result->mime . ';base64,' . $result->file}}" target="_blank" >File</a>
+                    <a href="{{ action('DataController@getPdf', $result->id) }}" target="_blank" >File</a>
                 </td>
                 <td>
                     <a href="{{ action('DataController@delete', $result->id) }}" >Delete</a>

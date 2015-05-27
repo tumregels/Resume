@@ -12,6 +12,13 @@ class DataController extends BaseController
         return View::make('index', compact('results'));
     }
 
+    public function getPdf( $id ) {
+        $data = Data::findOrFail($id);
+        $content = base64_decode($data->file);
+        $mime = $data->mime;
+        return Response::make($content, 200, array('content-type'=>$mime));
+    }
+
     public function create()
     {
         return View::make('create');

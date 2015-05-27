@@ -13,6 +13,8 @@
 
 Route::get('/', 'DataController@index');
 
+Route::get('/getpdf/{id}', 'DataController@getPdf');
+
 Route::get('/create', 'DataController@create');
 Route::post('/create', 'DataController@handleCreate');
 
