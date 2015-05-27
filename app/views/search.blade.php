@@ -9,31 +9,6 @@
  </div>
 
  <div id="fulldata">
-    @if (count($results) > 0)
-        <table >
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Keywords</th>
-                    <th>File</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($results as $result)
-                <tr>
-                    <td>{{ $result->firstname }}</td>
-                    <td>{{ $result->lastname }}</td>
-                    <td>{{ $result->keywords }}</td>
-                    <td>
-                        <a href="{{ action('DataController@getPdf', $result->id) }}" target="_blank" >File</a>
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-    @else
-        <p>There are no registrants! :(</p>
-    @endif
+@include("table")
 </div>
 @stop
