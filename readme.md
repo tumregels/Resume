@@ -1,3 +1,3 @@
-## Laravel PHP Framework
+## Simple Resume system based on Laravel PHP Framework
 
-Resume assignment
+![Preview](https://github.com/tumregels/Resume/raw/master/larablog.gif)
