@@ -1,7 +1,8 @@
 @section("header")
   <div class="header">
     <div class="container">
-      <h1>Resume</h1>
+        <h1>Resume</h1>
+
         <a href="{{ URL::to("/") }}">
           Home
         </a>

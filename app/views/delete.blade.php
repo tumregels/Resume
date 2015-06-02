@@ -8,7 +8,9 @@
     <form action="{{ action('DataController@handleDelete') }}" method="post" role="form">
         <input type="hidden" name="id" value="{{ $data->id }}" />
         <button type="submit" name="yes"> Yes </button>
-        <a href="{{ URL::to("/") }}">Cancel</a>
+        <a href="{{ URL::to("/") }}">
+        <button>Cancel</button>
+        </a>
         {{--<button href="{{ action('DataController@index') }}" >No Way!</button>--}}
     </form>
 

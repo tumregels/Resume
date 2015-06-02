@@ -19,9 +19,13 @@
     {{ Form::close() }}
 </div>
 
+
 <div id="cancel">
-    <button href="{{ action('DataController@index') }}">Cancel</button>
+    <a href="{{ URL::to("/") }}">
+            <button>Cancel</button>
+    </a>
 </div>
+
 <div id="errors">
     @if ($errors->count() > 0)
     <ul class="errors">
